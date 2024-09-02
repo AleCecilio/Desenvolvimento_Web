@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form>
+        <p><label for="nome">Nome:</label><input id="nome"></p>
+        <p><label>E-mail:</label><input type="email"></p>
+        <p><label>Data:<input type="date" name="date"></label></p>
+        <p><label>Telefone: <input type="tel" placeholder="(XX) XXXX-XXXX" pattern="^\(?\d{2}\)\d{4}[-\s]\d{4$}" required></label></p>
+        <p><label>Nota: <input type="number" name="nota" min="0" max="10" step="0.5"></label></p>
+        <p><label>Volume: <input type="range" name="volume" min="0" max="10" step="2" ></label></p>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script type="text/javascript">
+        function validar(){
+            var n =
+        document.formulario.pnome.value;
+            if(n=="") {
+                alert('O campo nome está vazio');
+               document.formulario.pnome.focus();
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form name="formulario" action="teste.jsp" method="post">
+        <p>
+            <label>
+                Nome: 
+                <input type="text" name="pnome" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Sobrenome: 
+                <input type="text" name="snome">
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Validar Nome" onClick="validar();">
+        </p>
+        <p>
+            <fieldset>
+                <legend>Estado Civil: </legend>
+                <p>
+                    <label><input type="radio" name="est_civ" value="Casado">Casado</label>
+                </p>
+                <p>
+                    <label><input type="radio" name="est_civ" value="Solteiro">Solteiro</label>
+                </p>
+                <p>
+                    <label><input type="radio" name="est_civ" value="Divorciado">Divorciado</label>
+                </p>
+
+            </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Produtos: </legend>
+                <p>
+                    <label><input type="checkbox" name="computador" value="Computador">Computador</label>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="impressora" value="Impressora">Impressora</label>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="monitor" value="Monitor">Monitor</label>
+                </p>
+            </fieldset>
+            <p><label>O que deseja pesquisar?
+                <input type="search" name="pesquisa">
+            </label></p>
+        </p>
+        <p><label>Escolha uma cor:
+            <input id="cor" type="color" onchange="document.getElementById('cor_selecionada').value = document.getElementById('cor').value;">
+        </label></p>
+        <p><label>Cor Selecionada:
+            <input id="cor_selecionada" type="text">
+        </label></p>
+    </form>
+</body>
+</html>

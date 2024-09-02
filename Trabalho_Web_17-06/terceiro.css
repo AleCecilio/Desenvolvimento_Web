@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+hr {
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+#uemg > td > img {
+    height: 60px;
+    width: 200px;;
+    margin: -25px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.navegacao {
+    padding-left: 830px;
+}
+
+
+.navegacao > a {
+    color: blue;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.navegacao > a:hover {
+    color: white;
+    background-color: blue;
+    text-decoration:underline;
+
+}
+
+#esquerdo {
+    width: 12.8%;
+    height: 80%;
+    border: solid 1px black;
+    border-top: solid 1px black;
+    border-right: transparent;
+    margin-top: -3px;
+    margin-left: 1px;
+    position: absolute;
+    left: 0%;
+    transform: translate(0%);
+}
+
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(158, 158, 158);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: -1px;
+    margin-right: 3px;
+    margin-bottom:0;
+}
+
+.esp{
+    margin-top: 20px;
+
+}
+
+#esquerdo > a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.7em;
+    margin-left: 20px;
+}
+
+#esquerdo > a:hover {
+    color: white;
+    background-color: blue;
+    text-decoration:underline;
+
+}
+#centro{
+    border: solid 1px black;
+    border-top: solid 1px black;
+    padding-bottom: 1px;
+    padding-right: 3px;
+    margin-top: -3px;
+    width: 78%;
+    height: 80%;
+    position: absolute;
+    left: 59%;
+    transform: translate(-59%);
+    
+}
+
+#centro > h1 {
+    font-size: 1.5em;
+    color: blue;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#centro > .windows {
+    padding-top: 25px;
+}
+
+
+#centro > a {
+    margin-right: 20px;
+    font-size: 0.7em;
+    color: black;
+    text-decoration: none;
+}
+
+#centro > a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+
+.um {
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+.dois {
+    float: left;
+    width: 120px;
+    height: 80px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+
+.tres {
+    float: left;
+    width: 120px;
+    height: 80px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+#direito {
+    width: 8.8%;
+    height: 80%;
+    border: solid 1px black;
+    border-top: solid 1px black;
+    margin-top: -3px;
+    padding-bottom: 1px;
+    border-left: transparent;
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%);
+}
+
+#direito > img {
+    height: 24%;
+}
+
+.d1 {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.d2 {
+    width: 110px;
+}
+
+.d3 {
+    width: 90px;
+    padding-left: 10px;
+}
+
+.d4 {
+    width: 90px;
+    padding-left: 10px;
+}
+
+#rodape {
+    height: 9%;
+    width: 100%;
+    border: solid 1px black;
+    border-top: transparent;
+    margin-top: -25px;
+    position: absolute;
+    top: 104%;
+    left: 104%;
+    transform: translate(-104%, -104%)
+}
+
+#rodape > p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+#rodape > p > a {
+    color: blue;
+}
+
+#rodape > p > a:hover {
+    color: white;
+    background-color: blue;
+    text-decoration:underline;
+
+}
+
+#rodape > .ita {
+    font-style: italic;
+}
+
+#rodape > .cop {
+    font-size: 0.6em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+    <link rel="stylesheet" href="questao02.css">
+    <script>
+        window.onload = function() {
+               var usuario = prompt("Qual o seu nome?");
+               if (usuario) {
+                   document.getElementById('saudacao').innerText = "Boas-Vindas, " + usuario + "!!";
+               }
+       }
+   </script>
+</head>
+<body>
+    <img src="logo-top-transparente.png" alt="Logo Moda TOP" height="40px" width="100px">
+    <h1 id="saudacao"></h1>
+    <h2>Cadastro de Clientes</h2>
+    <form autocomplete="on" method="post">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="mome" id="inome">
+        </p>
+        <p>
+            <label for="icpf">CPF: </label>
+            <input type="number" name="cpf" id="icpf" placeholder="XXX.XXX.XXX-XX">
+        </p>
+        <p>
+            <label for="iend">Endereço: </label>
+            <input type="text" name="end" id="iend">
+        </p>
+        <p>
+            <label for="itel">Telefone: </label>
+            <input type="tel" name="tel" id="itel" placeholder="(XX) XXXXX-XXXX">
+        </p>
+        <p>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas"> Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem" > Feminino</label>
+             
+        </p>
+        <p>
+            <legend>Roupas Favoritas</legend>
+            <input type="checkbox" name="cam" id="icma" > <label for="icam" > Camisas </label> <br>
+            <input type="checkbox" name="cal" id="ical"> <label for="ical"> Calças</label> <br> 
+            <input type="checkbox" name="ber" id="iber"> <label for="iber"> Bermudas</label> <br>
+            <input type="checkbox" name="ten" id="iten"> <label for="iten"> Tenis</label> <br>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</body>
+</html>

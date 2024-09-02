@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.writeln(document.title + `<br>`);
+        document.write(document.URL);
+    </script>
+    <h1 name="fundo">Iniciando os Estudos com DOM</h1>
+    <p class="cor">Resultado</p>
+    <p>Dom + Javascript</p>
+    <div id="msg">Clique aqui</div>
+    <script>
+        var p1 = document.getElementsByTagName(`p`)[0];
+        var p2 = document.getElementsByTagName(`p`)[1];
+        p1.style.color = `red`;
+        document.write(p2.innerHTML);
+        var menssagem = document.getElementById(`msg`);
+        menssagem.style.color = `red`;
+        menssagem.innerText = `Estou agradando ...`;
+        var f = document.getElementsByName(`fundo`)[0];
+        var c =  document.getElementsByClassName(`cor`)[0];
+        f.style.backgroud = `yellow`;
+        c.style.backgroud = `white`;
+
+
+    </script>
+</body>
+</html>
